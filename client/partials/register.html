@@ -1,0 +1,16 @@
+<div class="container">
+    <h1 align="center">API Testing using Mocha & Chai</h1>
+	<div class="registration-container">
+            <div id="output"></div>
+            <img src="../images/AT%20logo.png" class="avatar">
+            <div ng-show="error" class="alert alert-danger">{{errorMessage}}</div>
+            <div class="form-box">
+                <form class="form" ng-submit="register()">
+                    <input type="text" class="form-control" placeholder="username" name="username" ng-model="registerForm.username" required>
+                    <input type="password" placeholder="password" class="form-control" name="password" ng-model="registerForm.password" required>
+                    <button type="submit" class="btn btn-info btn-block login" type="submit" ng-disabled="disabled">Register</button>
+                </form>
+            </div>
+         <p>Already have account??<a href="#/login"><span>Click here to Login</span></a></p>
+    </div>      
+</div>

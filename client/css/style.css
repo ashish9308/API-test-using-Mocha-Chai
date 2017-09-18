@@ -1,0 +1,228 @@
+/*body{background: #eee url(http://subtlepatterns.com/patterns/sativa.png);}*/
+body{background: #eee url("../images/ice_age.png");}
+html,body{
+    position: relative;
+    height: 100%;
+}
+
+.login-container{
+    position: relative;
+    width: 300px;
+    margin: 80px auto;
+    padding: 20px 40px 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.login-container p
+{
+    font-size: 12px;
+    margin-top: 13px;
+    
+}
+
+.registration-container{
+    position: relative;
+    width: 300px;
+    margin: 80px auto;
+    padding: 20px 40px 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.registration-container p
+{
+    font-size: 12px;
+    margin-top: 13px;
+    
+}
+
+#output{
+    position: absolute;
+    width: 300px;
+    top: -75px;
+    left: 0;
+    color: #fff;
+}
+
+#output.alert-success{
+    background: rgb(25, 204, 25);
+}
+
+#output.alert-danger{
+    background: rgb(228, 105, 105);
+}
+
+
+.login-container::before,.login-container::after{
+    content: "";
+    position: absolute;
+    width: 100%;height: 100%;
+    top: 3.5px;left: 0;
+    background: #fff;
+    z-index: -1;
+    -webkit-transform: rotateZ(4deg);
+    -moz-transform: rotateZ(4deg);
+    -ms-transform: rotateZ(4deg);
+    border: 1px solid #ccc;
+
+}
+.registration-container::before,.registration-container::after{
+    content: "";
+    position: absolute;
+    width: 100%;height: 100%;
+    top: 3.5px;left: 0;
+    background: #fff;
+    z-index: -1;
+    -webkit-transform: rotateZ(4deg);
+    -moz-transform: rotateZ(4deg);
+    -ms-transform: rotateZ(4deg);
+    border: 1px solid #ccc;
+
+}
+
+.login-container::after{
+    top: 5px;
+    z-index: -2;
+    -webkit-transform: rotateZ(-2deg);
+     -moz-transform: rotateZ(-2deg);
+      -ms-transform: rotateZ(-2deg);
+
+}
+.registration-container::after{
+    top: 5px;
+    z-index: -2;
+    -webkit-transform: rotateZ(-2deg);
+     -moz-transform: rotateZ(-2deg);
+      -ms-transform: rotateZ(-2deg);
+
+}
+
+.avatar{
+    width: 100px;height: 100px;
+    margin: 10px auto 30px;
+    border-radius: 100%;
+    border: 2px solid #aaa;
+    background-size: cover;
+}
+
+.form-box input{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height:40px;
+    border: 1px solid #ccc;;
+    background: #fafafa;
+    transition:0.2s ease-in-out;
+
+}
+
+.form-box input:focus{
+    outline: 0;
+    background: #eee;
+}
+
+.form-box input[type="text"]{
+    border-radius: 5px 5px 0 0;
+    text-transform: lowercase;
+}
+
+.form-box input[type="password"]{
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+}
+
+.form-box button.login{
+    margin-top:15px;
+    padding: 10px 20px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.navbar-inverse {
+  width: 100% !important;
+  border-radius: 0;
+}
+.navbar-wrapper {
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+    width: 100% !important;
+  	left: 0;
+  	z-index: 20;
+}
+.sidenav {
+    height: 100%;
+    width: 205px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #495F6E;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+}
+
+.sidenav a {
+    padding: 4px 4px 4px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #4BC8B8;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
